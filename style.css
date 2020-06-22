@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav > li {
+    margin-left: 10px;
+}
+
+.nav-item {
+    position: relative;     
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute; 
+    width: 80%;
+    height: 2px;
+    bottom: 0px;
+    left: 10%;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+        
+}
+
+.nav-item:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    
+}
+
+#navbar1 {
+    box-shadow: 0px 0px 18px 10px rgb(219, 213, 213);
+
+}
+
+.jumbotron {
+    background: url('img/background.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+#intro {
+    /* margin-top: 25vh; */
+    padding: 20vh 0;
+    width: 50vw;
+    
+}
+
+#desc {
+    line-height: 150%;
+}
+
+#about {
+    padding: 80px 50px 50px 50px;
+
+}
+
+#skills {
+    padding: 80px 50px 50px 50px;
+}
+
+#profile {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#description {
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 70px 70px;
+    padding: 10px;
+
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-gap: 60px 60px;
+    padding: 10px;
+
+}
+
+li {
+    font-size: 20px;
+}
+
+.skills-title {
+    white-space: nowrap;
+}
+
+.contact-icon {
+    width: 50px;
+}
+
+.username {
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-color:rgba(178, 184, 68, 0.787);
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+.username:hover {
+    background-color: rgb(230, 240, 43);
+
+}
+
+#bottom {
+    text-align: center;
+    padding: 15px;
+
+}
+
+#credits {
+    font-size: 12px;
+}
+
+
+@media (max-width: 1200px) {
+    .social-media {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-gap: 60px 100px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    #description {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    #profile {
+        display: block;
+        margin: auto;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .skill-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 70px 70px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    .skill-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px 30px;
+        padding: 10px;
+    }
+
+    .social-media {
+        display: grid;
+        grid-template-columns: max-content;
+        grid-gap: 60px 0px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-item:hover::before {
+        visibility: hidden;     
+        
+    }
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
