@@ -65,6 +65,10 @@ html, body {
     padding: 80px 50px 50px 50px;
 }
 
+#contact {
+    padding: 80px 30px 30px 30px;
+}
+
 #profile {
     max-width: 250px;
     max-height: 250px;
@@ -101,6 +105,11 @@ li {
 
 .contact-icon {
     width: 50px;
+}
+
+#contact-me {
+    font-size: 50px; 
+    padding-left: 30px;
 }
 
 .username {
@@ -177,8 +186,47 @@ li {
 @media (max-width: 767px) {
     .nav-item:hover::before {
         visibility: hidden;     
-        
     }
+}
+
+@media (max-width: 576px) {
+
+    .name-title {
+        font-size: 50px;
+    }
+
+    #about {
+        padding: 80px 20px 20px 20px;
+    }
+
+    #skills {
+        padding: 80px 20px 20px 20px;
+    }
+
+    #contact {
+        padding: 80px 30px 30px 30px;
+    }
+
+    #desc {
+        font-size: 20px;
+    }
+
+    .skills-title {
+        font-size: 20px;
+    }
+    
+    #contact-me {
+        font-size: 40px; 
+        padding-left: 30px;
+    }
+
+    #contact-message {
+        font-size: 22px;
+    }
+    .username { 
+        font-size: 15px;
+    }
+
 }
 
 /*
